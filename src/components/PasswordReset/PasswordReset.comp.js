@@ -1,15 +1,12 @@
 import React from "react";
-import {
-  Container,
-  Col,
-  Form,
-  Row,
-  FormGroup,
-  FormLabel,
-  Button,
-} from "react-bootstrap";
+import { Container, Col, Form, Row, Button } from "react-bootstrap";
 import PropTypes from "prop-types";
-export const PasswordReset = ({ handleOnChange, handleOnResetSubmit, email,formswitcher }) => {
+export const PasswordReset = ({
+  handleOnChange,
+  handleOnResetSubmit,
+  email,
+  formswitcher,
+}) => {
   return (
     <Container>
       <Row>
@@ -35,7 +32,9 @@ export const PasswordReset = ({ handleOnChange, handleOnResetSubmit, email,forms
       </Row>
       <Row>
         <Col>
-          <a href="#!"onClick={()=>formswitcher("login")}>Login Now</a>
+          <a href="#!" onClick={() => formswitcher("login")}>
+            Login Now
+          </a>
         </Col>
       </Row>
     </Container>
@@ -46,5 +45,4 @@ PasswordReset.propTypes = {
   email: PropTypes.string.isRequired,
   handleOnResetSubmit: PropTypes.func.isRequired,
   formswitcher: PropTypes.func.isRequired,
-  
 };

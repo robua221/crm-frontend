@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Col,Form,Row, FormGroup, FormLabel,Button} from "react-bootstrap"
+import {Container,Col,Form,Row,FormGroup, FormLabel,Button} from "react-bootstrap"
 import PropTypes from 'prop-types';
 export const LoginForm = ({handleOnChange,handleOnSubmit,email,password,formswitcher}) => {
     return (
