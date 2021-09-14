@@ -26,7 +26,9 @@ export const AddTicketForm = ({
             placeholder="Subject"
             required
           />
-          <Form.Text className="text-danger">{frmError.subject && "Subject is required"}</Form.Text>
+          <Form.Text className="text-danger">
+            {frmError.subject && "Subject is required"}
+          </Form.Text>
         </Form.Group>
         <Form.Group as={Row}>
           <Form.Label column sm={3}>
@@ -44,7 +46,7 @@ export const AddTicketForm = ({
           </Col>
         </Form.Group>
         <Form.Group>
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Details</Form.Label>
           <Form.Control
             as="textarea"
             name="details"
