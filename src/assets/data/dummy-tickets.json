@@ -3,7 +3,24 @@
     "id": 1,
     "subject": "email certificate expired",
     "status": "Client response pending",
-    "addedAt": "2021-09-03"
+    "addedAt": "2021-09-03",
+    "history": [
+      {
+        "date": "2021-09-03",
+        "message": "fgfgfgdf",
+        "messageBy": "client"
+      },
+      {
+        "date": "2021-09-03",
+        "message": "fssfdf",
+        "messageBy": "operator"
+      },
+      {
+        "date": "2021-09-03",
+        "message": "sdfdfdfd",
+        "messageBy": "client"
+      }
+    ]
   },
   {
     "id": 2,

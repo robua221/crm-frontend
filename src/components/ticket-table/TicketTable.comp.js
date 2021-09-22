@@ -35,6 +35,6 @@ export const TicketTable = ({ tickets }) => {
     </Table>
   );
 };
-TicketTable.prototypes = {
+TicketTable.PropTypes = {
   tickets: PropTypes.array.isRequired,
 };
