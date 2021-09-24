@@ -9,7 +9,7 @@ export const AddTicketForm = ({
   frmError,
   frmData,
 }) => {
-  console.log(frmData);
+   
   return (
     <Jumbotron className="mt-3 add-new-ticket bg-light">
       <h1 className="text-info text-center">Add New Ticket</h1>
