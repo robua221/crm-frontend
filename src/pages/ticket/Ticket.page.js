@@ -14,7 +14,7 @@ export const Ticket = () => {
   const [ticket, setTicket] = useState("");
   useEffect(() => {
     for (let i = 0; i < tickets.length; i++) {
-      if (tickets[i].id == tId) {
+      if (tickets[i].id === tId) {
         setTicket(tickets[i]);
         continue;
       }
@@ -37,7 +37,6 @@ export const Ticket = () => {
       </Row>
       <Row>
         <Col className="text-weight-bolder text-secondary">
-         
           <div className="subject">Subject : {ticket.subject}</div>
           <div className="date">Ticket Opened:{ticket.addedAt}</div>
           <div className="status">Status:{ticket.status}</div>
@@ -47,10 +46,7 @@ export const Ticket = () => {
         </Col>
       </Row>
       <Row className="mt-4">
-        <Col>
-        {ticket.history &&  
-          <MessageHistory msg={ticket.history} />}
-        </Col>
+        <Col>{ticket.history && <MessageHistory msg={ticket.history} />}</Col>
       </Row>
       <hr />
       <Row className="mt-4">
